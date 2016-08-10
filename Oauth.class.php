@@ -6,10 +6,6 @@ namespace kuange\qqconnect;
  * @copyright © 2013, Tencent Corporation. All rights reserved.
  */
 
-use qqconnect\Recorder;
-use qqconnect\URL;
-use qqconnect\ErrorCase;
-
 class Oauth{
 
     const VERSION = "2.0";

@@ -6,8 +6,6 @@ namespace kuange\qqconnect;
  * @copyright © 2013, Tencent Corporation. All rights reserved.
  */
 
-use qqconnect\ErrorCase;
-
 class Recorder{
     private static $data;
     private $inc;

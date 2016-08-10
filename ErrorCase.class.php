@@ -6,7 +6,6 @@ namespace kuange\qqconnect;
  * @copyright © 2013, Tencent Corporation. All rights reserved.
  */
 
-use qqconnect\Recorder;
 /*
  * @brief ErrorCase类，封闭异常
  * */

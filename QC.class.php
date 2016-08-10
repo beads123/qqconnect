@@ -6,7 +6,6 @@ namespace kuange\qqconnect;
  * @copyright © 2013, Tencent Corporation. All rights reserved.
  */
 
-use qqconnect\Oauth;
 /*
  * @brief QC类，api外部对象，调用接口全部依赖于此对象
  * */
