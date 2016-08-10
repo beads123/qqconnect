@@ -15,9 +15,7 @@ class Recorder{
         $this->error = new ErrorCase();
 
         //-------读取配置文件
-        $incFileContents = file(CONF_PATH . "/qqconnect.php");
-        $incFileContents = $incFileContents[0];
-        $this->inc = json_decode($incFileContents);
+        $this->inc = C('qqconnect');
         if(empty($this->inc)){
             $this->error->showError("20001");
         }
@@ -42,10 +40,10 @@ class Recorder{
     }
 
     public function readInc($name){
-        if(empty($this->inc->$name)){
+        if(empty($this->inc[$name])){
             return null;
         }else{
-            return $this->inc->$name;
+            return $this->inc[$name];
         }
     }
 
