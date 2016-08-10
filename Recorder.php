@@ -15,7 +15,7 @@ class Recorder{
         $this->error = new ErrorCase();
 
         //-------读取配置文件
-        $this->inc = C('qqconnect');
+        $this->inc = config('qqconnect');
         if(empty($this->inc)){
             $this->error->showError("20001");
         }
