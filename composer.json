@@ -12,13 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "qqconnect\\": "src/"
-        }
-    },
-    "repositories": {
-        "packagist": {
-            "type": "composer",
-            "url": "https://packagist.phpcomposer.com"
+            "kuange\\qqconnect\\": "src/"
         }
     }
 }
