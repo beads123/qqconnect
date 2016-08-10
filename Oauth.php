@@ -42,8 +42,7 @@ class Oauth{
             "scope" => $scope
         );
 
-        $login_url =  $this->urlUtils->combineURL(self::GET_AUTH_CODE_URL, $keysArr);
-        return redirect($login_url);
+        return $this->urlUtils->combineURL(self::GET_AUTH_CODE_URL, $keysArr);
     }
 
     public function qq_callback(){
