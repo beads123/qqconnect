@@ -20,10 +20,10 @@ class Recorder{
             $this->error->showError("20001");
         }
 
-        if(empty($_SESSION['QC_userData'])){
+        if(empty(session('QC_userData'))){
             self::$data = array();
         }else{
-            self::$data = $_SESSION['QC_userData'];
+            self::$data = session('QC_userData');
         }
     }
 
@@ -52,6 +52,6 @@ class Recorder{
     }
 
     function __destruct(){
-        $_SESSION['QC_userData'] = self::$data;
+        session('QC_userData') = self::$data;
     }
 }
