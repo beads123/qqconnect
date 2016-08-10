@@ -66,3 +66,9 @@ class CallbackController extends Controller
     }
 }
 ```
+
+支持不同回调url
+
+```
+$qc->qq_login($another_callback_url);
+```
