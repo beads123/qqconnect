@@ -52,6 +52,6 @@ class Recorder{
     }
 
     function __destruct(){
-        session('QC_userData') = self::$data;
+        session('QC_userData', self::$data);
     }
 }
