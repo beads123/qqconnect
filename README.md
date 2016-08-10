@@ -1,4 +1,15 @@
 # qqconnect - ThinkPHP 5 QQ登录
+
+由于使用tp5的专有辅助函数, 所以其他框架请勿使用!
+
+基于官方的PHP SDK V2.1 编写, 基本上没有修改代码
+
+修改的地方:
+
+session 的读写
+
+配置的读写
+
 ## 安装方法
 
 composer安装:
@@ -18,7 +29,14 @@ composer require kuange/qqconnect
 ]
 ```
 
-控制器编写:
+## 示例代码
+
+### 页面编写:
+```
+<a href="{:url('home/oauth/qq')}">QQ登录</a>
+```
+
+### 控制器编写:
 
 登录
 ``` php
