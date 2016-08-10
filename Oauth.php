@@ -43,8 +43,7 @@ class Oauth{
         );
 
         $login_url =  $this->urlUtils->combineURL(self::GET_AUTH_CODE_URL, $keysArr);
-
-        header("Location:$login_url");
+        return redirect($login_url);
     }
 
     public function qq_callback(){
