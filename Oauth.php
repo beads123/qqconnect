@@ -24,9 +24,9 @@ class Oauth{
         $this->error = new ErrorCase();
     }
 
-    public function qq_login(){
+    public function qq_login($callbakc_url = ''){
         $appid = $this->recorder->readInc("appid");
-        $callback = $this->recorder->readInc("callback");
+        $callback = $callbakc_url ? : $this->recorder->readInc("callback");
         $scope = $this->recorder->readInc("scope");
 
         //-------生成唯一随机串防CSRF攻击
